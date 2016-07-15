@@ -4,7 +4,7 @@
   "description": "Grunt eslint config",
   "main": ".eslintrc.json",
   "scripts": {
-    "test": "eslint test/fixtures/*.js"
+    "test": "eslint test/fixtures/**/*.js"
   },
   "repository": {
     "type": "git",
