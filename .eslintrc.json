@@ -12,8 +12,6 @@
       "error",
       "all"
     ],
-    "eqeqeq": "error",
-    "no-eq-null": "error",
     "wrap-iife": [
       "error",
       "any"
