@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-jquery",
+  "version": "1.0.0",
+  "description": "jQuery eslint config",
+  "main": ".eslintrc.json",
+  "scripts": {
+    "test": "eslint test/fixtures/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "jquery/eslint-config-jquery"
+  },
+  "homepage": "https://contribute.jquery.org/style-guide/js/",
+  "issues": "https://github.com/jquery/eslint-config-jquery/issues",
+  "keywords": [
+    "style guide",
+    "eslint",
+    "config",
+    "lint",
+    "jquery"
+  ],
+  "files": [
+    ".eslintrc.json"
+  ],
+  "author": "Gaidarenko Oleg <markelog@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.0.1"
+  }
+}
