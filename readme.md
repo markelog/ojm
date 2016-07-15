@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jquery/eslint-config-grunt.svg)](https://travis-ci.org/jquery/eslint-config-grunt)
+[![Build Status](https://travis-ci.org/markelog/eslint-config-grunt.svg)](https://travis-ci.org/markelog/eslint-config-grunt)
 
 # Grunt eslint config
 

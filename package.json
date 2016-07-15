@@ -1,23 +1,23 @@
 {
-  "name": "eslint-config-jquery",
+  "name": "eslint-config-grunt",
   "version": "1.0.0",
-  "description": "jQuery eslint config",
+  "description": "Grunt eslint config",
   "main": ".eslintrc.json",
   "scripts": {
     "test": "eslint test/fixtures/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "jquery/eslint-config-jquery"
+    "url": "markelog/eslint-config-grunt"
   },
-  "homepage": "https://contribute.jquery.org/style-guide/js/",
-  "issues": "https://github.com/jquery/eslint-config-jquery/issues",
+  "homepage": "http://gruntjs.com/contributing#syntax",
+  "issues": "https://github.com/markelog/eslint-config-grunt/issues",
   "keywords": [
     "style guide",
     "eslint",
     "config",
     "lint",
-    "jquery"
+    "grunt"
   ],
   "files": [
     ".eslintrc.json"
