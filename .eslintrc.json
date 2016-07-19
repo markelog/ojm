@@ -1,4 +1,7 @@
 {
+  "plugins": [
+    "pabigot"
+  ],
   "env": {
     "node": true
   },
@@ -21,6 +24,11 @@
         { "functions": false }
     ],
     "new-cap": "error",
+    "pabigot/affixed-ids": ["error", {
+      "baseStyle": "camelcase",
+      "allowedPrefixes": ["opt_"],
+      "ignoredIdentifiers": ["var_args"]
+    }],
     "no-caller": "error",
     "dot-notation": "error",
     "no-undef": "error",

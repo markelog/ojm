@@ -26,5 +26,8 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^3.0.1"
+  },
+  "dependencies": {
+    "eslint-plugin-pabigot": "^0.3.0"
   }
 }
