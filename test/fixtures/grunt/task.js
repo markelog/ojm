@@ -1,10 +1,7 @@
 'use strict';
 
-// The last specified tasks message.
-var lastInfo,
-
-  // Keep track of the number of log.error() calls.
-  errorcount;
+// The last specified tasks message and keep track of the number of log.error() calls.
+var lastInfo, errorcount;
 
 var grunt = require('../grunt');
 
