@@ -25,9 +25,10 @@
   "author": "Gaidarenko Oleg <markelog@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "eslint-plugin-pabigot": "^0.3.0",
     "eslint": "^3.0.1"
   },
-  "dependencies": {
+  "peerDependencies": {
     "eslint-plugin-pabigot": "^0.3.0"
   }
 }
