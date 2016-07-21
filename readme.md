@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/markelog/eslint-config-grunt.svg)](https://travis-ci.org/markelog/eslint-config-grunt)
 
-# Grunt eslint config
+# Grunt ESLint config
 
 ## Usage
 
