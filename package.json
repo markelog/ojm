@@ -12,6 +12,10 @@
     "type": "git",
     "url": "markelog/ojm"
   },
+  "bin": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
   "issues": "https://github.com/markelog/ojm/issues",
   "keywords": [
     "cli-app",
