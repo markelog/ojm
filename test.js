@@ -13,60 +13,60 @@ test('without arguments', async t => {
   t.true(ret.stdout.includes('Check if site is down through isup.com'));
 });
 
-test('check github.com', async t => {
+test('check google.com', async t => {
   let ret;
 
   try {
-    ret = await execa('./index.js', ['github.com']);
+    ret = await execa('./index.js', ['google.com']);
   } catch (err) {
     ret = err;
   }
 
-  t.true(ret.stdout.includes('  "github.com" is up!'));
+  t.true(ret.stdout.includes('  "google.com" is up!'));
 });
 
-test('check github.com with https://', async t => {
+test('check google.com with https://', async t => {
   let ret;
 
   try {
-    ret = await execa('./index.js', ['https://github.com']);
+    ret = await execa('./index.js', ['https://google.com']);
   } catch (err) {
     ret = err;
   }
 
-  t.true(ret.stdout.includes('  "github.com" is up!'));
+  t.true(ret.stdout.includes('  "google.com" is up!'));
 });
 
-test('check github.com with http://', async t => {
+test('check google.com with http://', async t => {
   let ret;
 
   try {
-    ret = await execa('./index.js', ['http://github.com']);
+    ret = await execa('./index.js', ['http://google.com']);
   } catch (err) {
     ret = err;
   }
 
-  t.true(ret.stdout.includes('  "github.com" is up!'));
+  t.true(ret.stdout.includes('  "google.com" is up!'));
 });
 
 test('check non-existent url', async t => {
   let ret;
 
   try {
-    ret = await execa('./index.js', ['http://github.coma']);
+    ret = await execa('./index.js', ['http://google.coma']);
   } catch (err) {
     ret = err;
   }
 
-  t.true(ret.stderr.includes(" it's not just you! \"github.coma\" is down"));
+  t.true(ret.stderr.includes(" it's not just you! \"google.coma\" is down"));
   t.is(ret.code, 1);
 });
 
-test('check github.com not url like', async t => {
+test('check google.com not url like', async t => {
   let ret;
 
   try {
-    ret = await execa('./index.js', ['github']);
+    ret = await execa('./index.js', ['google']);
   } catch (err) {
     ret = err;
   }
