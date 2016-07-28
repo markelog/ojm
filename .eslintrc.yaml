@@ -1,3 +1,5 @@
 extends: airbnb-base
+parser: babel-eslint
 rules:
   no-console: "off"
+  import/no-extraneous-dependencies: "off"

@@ -2,14 +2,16 @@
   "name": "ojm",
   "description": "Check if site is down through isup.com",
   "main": "index.js",
+  "preferGlobal": true,
+  "author": "Gaidarenko Oleg <markelog@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "test": "eslint index.js"
+    "test": "eslint *.js && ava"
   },
   "repository": {
     "type": "git",
     "url": "markelog/ojm"
   },
-  "homepage": "http://gruntjs.com/contributing#syntax",
   "issues": "https://github.com/markelog/ojm/issues",
   "keywords": [
     "cli-app",
@@ -31,11 +33,12 @@
   "files": [
     "index.js"
   ],
-  "author": "Gaidarenko Oleg <markelog@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-eslint": "^6.1.2",
     "eslint": "^3.1.1",
     "eslint-config-airbnb-base": "^5.0.0",
-    "eslint-plugin-import": "^1.12.0"
+    "eslint-plugin-import": "^1.12.0",
+    "execa": "^0.4.0"
   }
 }

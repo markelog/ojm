@@ -20,26 +20,27 @@ if (!url) {
 url = url.replace('https://', '').replace('http://', '');
 
 got(`${provider}/${url}`).then(data => {
-  console.log();
-
   if (data.body.includes("It's just you.")) {
+    console.log();
     console.log(` ${figures.tick}  "${url}" is up!`);
     console.log();
     process.exit(0);
   }
 
   if (data.body.includes("It's not just you!")) {
-    console.log(` ${figures.cross} it's not just you! "${url}" is down`);
-    console.log();
+    console.error();
+    console.error(` ${figures.cross}  it's not just you! "${url}" is down`);
+    console.error();
     process.exit(1);
   }
 
-  console.log('huh?');
-  console.log();
+  console.error();
+  console.error(` ${figures.cross}  huh? "http://${url}" doesn't look like a site on the interwho`);
+  console.error();
   process.exit(1);
 }).catch(() => {
-  console.log();
-  console.log(` ${figures.cross} can't connect, check your internet connection`);
-  console.log();
+  console.error();
+  console.error(` ${figures.cross}  can't connect, check your internet connection`);
+  console.error();
   process.exit(1);
 });
