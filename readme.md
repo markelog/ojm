@@ -6,8 +6,7 @@
 
 Packges like [`is-github-down`](https://www.npmjs.com/package/is-github-down) or [`is-down`](https://www.npmjs.com/package/is-down) check if site is down fetching status code from your location.
 
-Which is unreliable since site might be available but blocked from your IP.
-
+Which is unreliable since site might be available but blocked for your IP.
 Whereas this tool checks it through awesome [`isup.com`](http://isup.com) service which uses google servers around the world.
 
 ## Install
