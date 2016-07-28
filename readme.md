@@ -1,24 +1,23 @@
-[![Build Status](https://travis-ci.org/markelog/eslint-config-grunt.svg)](https://travis-ci.org/markelog/eslint-config-grunt)
+[![Build Status](https://travis-ci.org/markelog/ojm.svg)](https://travis-ci.org/markelog/ojm)
 
-# Grunt ESLint config
+> Check if site is down through `isup.com`
+
+## Rational
+
+Packges like [`is-github-down`](https://www.npmjs.com/package/is-github-down) or [`is-down`](https://www.npmjs.com/package/is-down) check if site is down fetching status code from your location.
+
+Which is unreliable since site might be available but blocked from your IP.
+
+Whereas this tool checks it through awesome [`isup.com`](http://isup.com) service which uses google servers around the world.
+
+## Install
+
+```
+$ npm install --global ojm
+```
 
 ## Usage
 
-```sh
-npm install --save-dev eslint-config-grunt
 ```
-
-Configure ESLint with a `.eslintrc` file using the following contents:
-```json
-{
-	"extends": "grunt"
-}
+$ ojm <website>
 ```
-
-## Status
-
-This config follows the spirit of the Grunt [code style](http://gruntjs.com/contributing#syntax), does not violate it and extends it.
-
-## Semver policy
-
-Same approach as in ESLint, see https://github.com/eslint/eslint#user-content-semantic-versioning-policy.

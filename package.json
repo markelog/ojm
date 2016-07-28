@@ -1,34 +1,41 @@
 {
-  "name": "eslint-config-grunt",
-  "version": "2.0.1",
-  "description": "Grunt eslint config",
-  "main": ".eslintrc.json",
+  "name": "ojm",
+  "description": "Check if site is down through isup.com",
+  "main": "index.js",
   "scripts": {
-    "test": "eslint test/fixtures/**/*.js"
+    "test": "eslint index.js"
   },
   "repository": {
     "type": "git",
-    "url": "markelog/eslint-config-grunt"
+    "url": "markelog/ojm"
   },
   "homepage": "http://gruntjs.com/contributing#syntax",
-  "issues": "https://github.com/markelog/eslint-config-grunt/issues",
+  "issues": "https://github.com/markelog/ojm/issues",
   "keywords": [
-    "style guide",
-    "eslint",
-    "config",
-    "lint",
-    "grunt"
+    "cli-app",
+    "cli",
+    "down",
+    "check",
+    "up",
+    "status",
+    "downforeveryoneorjustme",
+    "site",
+    "isup",
+    "down for everyone or just me"
   ],
+  "dependencies": {
+    "figures": "^1.7.0",
+    "got": "^6.3.0",
+    "meow": "^3.7.0"
+  },
   "files": [
-    ".eslintrc.json"
+    "index.js"
   ],
   "author": "Gaidarenko Oleg <markelog@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint-plugin-pabigot": "^0.3.0",
-    "eslint": "^3.0.1"
-  },
-  "peerDependencies": {
-    "eslint-plugin-pabigot": "^0.3.0"
+    "eslint": "^3.1.1",
+    "eslint-config-airbnb-base": "^5.0.0",
+    "eslint-plugin-import": "^1.12.0"
   }
 }
