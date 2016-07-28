@@ -7,7 +7,7 @@ const figures = require('figures');
 
 const cli = meow(`
   Usage:
-    ojm <website>: check if a website is down through isup.com
+    ojm <website>
 `);
 
 const provider = 'http://isup.me';
