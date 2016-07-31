@@ -22,7 +22,7 @@ test('check google.com', async t => {
     ret = err;
   }
 
-  t.true(ret.stdout.includes('  "google.com" is up!'));
+  t.true(ret.stdout.includes(' google.com is up!'));
 });
 
 test('check google.com with https://', async t => {
@@ -34,7 +34,7 @@ test('check google.com with https://', async t => {
     ret = err;
   }
 
-  t.true(ret.stdout.includes('  "google.com" is up!'));
+  t.true(ret.stdout.includes(' google.com is up!'));
 });
 
 test('check google.com with http://', async t => {
@@ -46,7 +46,7 @@ test('check google.com with http://', async t => {
     ret = err;
   }
 
-  t.true(ret.stdout.includes('  "google.com" is up!'));
+  t.true(ret.stdout.includes(' google.com is up!'));
 });
 
 test('check non-existent url', async t => {
@@ -58,7 +58,7 @@ test('check non-existent url', async t => {
     ret = err;
   }
 
-  t.true(ret.stderr.includes(" it's not just you! \"google.coma\" is down"));
+  t.true(ret.stderr.includes(" it's not just you! google.coma is down"));
   t.is(ret.code, 1);
 });
 
