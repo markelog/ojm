@@ -29,25 +29,25 @@ url = url.replace('https://', '').replace('http://', '');
 got(`${provider}/${url}`).then(data => {
   if (data.body.includes("It's just you.")) {
     console.log();
-    console.log(`${symbols.tick} ${url} is up!`);
+    console.log(`${symbols.tick} It's just you. ${url} is up.`);
     console.log();
     process.exit(0);
   }
 
   if (data.body.includes("It's not just you!")) {
     console.error();
-    console.error(`${symbols.cross} it's not just you! ${url} is down`);
+    console.error(`${symbols.cross} It's not just you! ${url} is down.`);
     console.error();
     process.exit(1);
   }
 
   console.error();
-  console.error(`${symbols.cross} huh? "${url}" doesn't look like a site on the interwho`);
+  console.error(`${symbols.cross} huh? "${url}" doesn't look like a site on the interwho.`);
   console.error();
   process.exit(1);
 }).catch(() => {
   console.error();
-  console.error(`${symbols.cross} can't connect, check your internet connection`);
+  console.error(`${symbols.cross} Can't connect, check your internet connection.`);
   console.error();
   process.exit(1);
 });
