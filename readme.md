@@ -1,8 +1,6 @@
-[![Build Status](https://travis-ci.org/markelog/ojm.svg)](https://travis-ci.org/markelog/ojm)
+## Rational [![Build Status](https://travis-ci.org/markelog/ojm.svg)](https://travis-ci.org/markelog/ojm)
 
 > Check if site is down through [`isup.com`](http://isup.com)
-
-## Rational
 
 Packges like [`is-github-down`](https://www.npmjs.com/package/is-github-down) or [`is-down`](https://www.npmjs.com/package/is-down) check if site is down fetching status code from your location.
 
