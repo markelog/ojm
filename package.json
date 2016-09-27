@@ -30,6 +30,7 @@
     "down for everyone or just me"
   ],
   "dependencies": {
+    "chalk": "^1.1.3",
     "figures": "^1.7.0",
     "got": "^6.3.0",
     "meow": "^3.7.0"
