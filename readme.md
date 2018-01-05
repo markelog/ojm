@@ -1,4 +1,4 @@
-## Rational [![Build Status](https://travis-ci.org/markelog/ojm.svg)](https://travis-ci.org/markelog/ojm)
+## OJM [![Build Status](https://travis-ci.org/markelog/ojm.svg)](https://travis-ci.org/markelog/ojm)
 
 > Check if site is down through [`isup.com`](http://isup.com)
 
